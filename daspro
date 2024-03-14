@@ -1,0 +1,29 @@
+def merge_dictionaries(dict1, dict2):
+    # Menggabungkan kedua dictionary menggunakan operator update()
+    dict2.update(dict1)
+    return dict2
+
+# Data dictionary jadwal DasproIf2
+jadwal_daspro_if2 = {
+    'Senin': '09.00 - 11.30',
+    'Selasa': '13.00 - 15.30',
+    'Rabu': '09.00 - 11.30',
+    'Kamis': '13.00 - 15.30',
+    'Jumat': '09.00 - 11.30'
+}
+
+# Data dictionary jadwal DasproIf3
+jadwal_daspro_if3 = {
+    'Senin': '09.00 - 11.30',
+    'Selasa': '13.00 - 15.30',
+    'Rabu': '09.00 - 11.30',
+    'Kamis': '13.00 - 15.30',
+    'Jumat': '09.00 - 11.30'
+}
+
+# Menggabungkan kedua data dictionary
+merged_jadwal = merge_dictionaries(jadwal_daspro_if2, jadwal_daspro_if3)
+
+# Menampilkan hasil penggabungan
+print("Jadwal Gabungan DasproIf2 dan DasproIf3:")
+print(merged_jadwal)

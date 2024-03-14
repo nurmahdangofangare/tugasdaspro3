@@ -1,0 +1,21 @@
+def lists_to_dict(keys, values):
+    # Mengecek apakah panjang kedua list sama
+    if len(keys) != len(values):
+        print("Panjang kedua list harus sama.")
+        return None
+    
+    # Menggunakan fungsi zip() untuk menggabungkan kedua list menjadi tuple
+    # Kemudian menggunakan fungsi dict() untuk mengonversi tuple tersebut menjadi dictionary
+    result_dict = dict(zip(keys, values))
+    return result_dict
+
+# Contoh data list
+keys = ['nama', 'umur', 'kota']
+values = ['Johnny', 29, 'Chicago']
+
+# Mengubah list menjadi dictionary
+result = lists_to_dict(keys, values)
+
+if result:
+    print("Data Dictionary:")
+    print(result)
